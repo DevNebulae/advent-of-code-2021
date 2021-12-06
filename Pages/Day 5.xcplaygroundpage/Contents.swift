@@ -79,7 +79,7 @@ func part2(_ vents: [Vent]) -> Int {
     return count
 }
 
-let contents = FileLoader.load(file: "Example", extension: "txt")
+let contents = FileLoader.load(file: "Input", extension: "txt")
 let points = contents.components(separatedBy: .newlines)
     .filter { !$0.isEmpty }
     .map { str -> Vent in
